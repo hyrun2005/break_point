@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-)qx0ah%fx_pecck3yzr6h1h0n(2))j_c42gu(y6%%qwa$a@!ii"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -39,8 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "players",
     "accounts",
-    "predictions",
-    "tailwind"
+    "predictions"
 ]
 
 MIDDLEWARE = [
@@ -119,11 +118,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-STATIC_URL = "static/"
-STATICFILES_DIRS = [BASE_DIR / "static"]
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [BASE_DIR / 'static']  # optional: for local dev
+STATIC_ROOT = BASE_DIR / 'staticfiles'    # required for collectstatic
 
-MEDIA_URL = "/media/"
-MEDIA_ROOT = BASE_DIR / "media"
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+
 
 
 # Default primary key field type
