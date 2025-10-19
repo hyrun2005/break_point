@@ -1,0 +1,144 @@
+main {
+    background-color: #03045E;
+}
+
+/* Body */
+.prediction_body_yh {
+    width: 80%;
+    min-height: 120rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Title */
+.prediction_title_yh {
+    margin: 0 auto;
+    padding: 10px;
+}
+.prediction_title_yh h2 {
+    color: #CAF0F8;
+}
+
+/* Choosing block */
+.players_choosing_yh {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Player wrapper */
+.player_1_yh,
+.player_2_yh {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.player_1_yh { margin-right: 30px; }
+.player_2_yh { margin-left: 30px; }
+
+/* Player card */
+.show_player1_yh,
+.show_player2_yh {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    text-align: center;
+}
+
+/* Photos */
+.photo1_yh,
+.photo2_yh {
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* Names */
+.player1_name_yh,
+.player2_name_yh {
+    margin-top: -2rem;
+    max-width: 100%;
+}
+.player1_name_yh p,
+.player2_name_yh p {
+    color: #00B4D8;
+    font-size: 20px;
+}
+
+/* Dropdown wrapper */
+.choose_player1_yh,
+.choose_player2_yh {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Smooth dropdown */
+.choose_player1_yh select{
+            width: 100%;
+            height: 100%;
+    color: #00B4D8;
+            background: transparent;
+            border: none;
+            font-family: 'PP Neue Montreal', sans-serif;
+            font-size: 24px;
+            font-weight: 500;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+        }
+
+/* but show items in the dropdown */
+.player_select_yh option {
+    color: #CAF0F8;  /* visible text */
+    text-shadow: none;
+    background: #023E8A;
+}
+
+/* Hover & focus effects */
+.player_select_yh:hover {
+    border-color: #00B4D8;
+}
+.player_select_yh:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 180, 216, 0.6);
+    border-color: #00B4D8;
+}
+
+.player1_stats_yh{
+    margin-top: 1rem;
+}
+
+/* Lightning VS */
+.vs_lightning_yh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+}
+.vs_img_yh {
+    max-width: 160%;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 0 8px #0000a4) drop-shadow(0 0 18px #00ffff);
+}
+
+/* Tournament info */
+.tournament_info_yh {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem auto;
+    width: 95%;
+}
+.tournament_1_yh,
+.tournament_2_yh {
+    flex: 1;
+    border: 1px solid #90E0EF;
+    min-height: 200px;
+}

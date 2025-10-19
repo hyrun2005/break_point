@@ -1,0 +1,10 @@
+joblib~=1.5.2
+django
+playwright
+lxml
+pandas
+scikit-learn==1.7.1
+requests
+beautifulsoup4
+pillow
+django-tailwind
